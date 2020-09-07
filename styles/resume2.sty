@@ -1,0 +1,61 @@
+%***************************************************************************
+%
+%  Copyright (c) 2003-2020 Clifford Thompson
+%
+%  This program is free software: you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+%  This program is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%
+%**************************************************************************
+
+\ProvidesPackage{styles/resume2}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{marvosym}
+
+\setlength{\paperwidth}{8 in}
+\setlength{\paperheight}{11 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{9.5 in}
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{-0.2 in}
+\setlength{\topmargin}{-0.2 in}
+\setlength{\marginparsep}{0 in}
+\setlength{\marginparwidth}{0 in}
+\setlength{\headheight}{0 in}
+\setlength{\headsep}{0 in}
+\setlength{\footskip}{0 in}
+
+\pagestyle{empty} % no page numbers
+
+
+\newcommand{\resumeheader}[7]{\center\mbox{\Large\bf#1}\\\flushleft\mbox{#2}\hfill\mbox{{#6}}\\\vspace{0.01 cm}\mbox{#3}\hfill\mbox{{\bf}#5}\\\vspace{0.00 cm}\mbox{#4}\hfill\mbox{{#7}}\\\vspace{0.5 cm}\hrule}
+\newcommand{\resumesection}[1]{\vspace{0.4 cm} \begin{large}  \textbf{#1} \end{large}\\}
+\newcommand{\resumeeducation}[5]{\vspace{0.2 cm}\resumeindent{1 cm}\textbf{\textit{#1}}, #2\\\resumeindent{1 cm}#3\hspace{0.2in}{\small#4}\hfill(#5)\\}
+\newcommand{\resumejob}[4]{\vspace{0.5 cm}\resumeindent{1 cm}\textbf{\textit{#1}}\\\resumeindent{1 cm}#2\hfill(#3)\\\vspace{0.2 cm}}
+\newcommand{\resumeskill}[1]{\vspace{0.2 cm}\resumeindent{1 cm}\textbf{\textit{#1}}\\}
+\newcommand{\resumeaward}[3]{\resumeindent{1 cm}\textbf{\textit{#1}} - {#2}\hfill(#3)\\}
+\newcommand{\resumereference}[7]{\begin{minipage}[b]{5.5 cm}\textbf{\textit{#1}}\\#2\\#3\\ #4\\#5\\#6\\#7\\\end{minipage}}
+\newcommand{\resumeproject}[4]{\vspace{0.3 cm}\resumeindent{1 cm}\textbf{\textit{#1}}\hfill(#3)\\\vspace{0.2 cm}\resumeindent{1 cm}\begin{minipage}[b]{15.5 cm}#4\end{minipage}\\}
+\newcommand{\resumeindent}[1]{\hspace{#1}}
+\newcommand{\resumebullet}[1]{\resumeindent{1.5 cm}$\cdot$ {#1}\\}
+\newcommand{\rb}[1]{\resumebullet{#1}}
+\newcommand{\resumehl}[1]{\textcolor{red}{#1}}
+\newcommand{\resumeobjective}[1]{\begin{minipage}[b]{15 cm}#1\end{minipage}\\}
+\newcommand{\resumeclearance}[2]{\resumeindent{1 cm}\textbf{\textit{#1}}\hfill(#2)\\}
+
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+
+% Old commands
+
+%\newcommand{\resumeheader}[7]{\center\mbox{\Large\bf#1}\\\flushleft\mbox{#2}\hfill\mbox{{\bf  tel}: #5}\\\mbox{#3}\hfill\mbox{{\bf email}: #6}\\\mbox{#4}\hfill\mbox{{\bf url}: #7}\\\vspace{0.5 cm}\hrule}
+%\newcommand{\resumejob}[4]{\vspace{0.5 cm}\resumeindent{1 cm}\textbf{\textit{#1}}\\\resumeindent{1 cm}#2\hfill(#3)\\\vspace{0.2 cm}\resumeindent{1 cm}#4\\}
